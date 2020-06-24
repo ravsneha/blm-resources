@@ -1,0 +1,129 @@
+@import 'variables';
+.hero {
+  h1 {
+    font-weight: $logo-weight;
+    text-align: center;
+  }
+
+}
+
+.actionCard{
+  text-align: center;
+  .actionCardTitle {
+    font-weight: $bold-weight;
+    color:white;
+  }
+  .card-subtitle {
+    color: black;
+  }
+}
+
+#donateCard {
+  background-color: green;
+}
+
+#advocateCard {
+  background-color: pink;
+}
+
+#appreciateCard {
+  background-color: orange;
+}
+
+#educateCard {
+  background-color: lightblue;
+}
+
+
+
+
+
+//LARGE SCREENS
+@media (min-width: $breakpoint-tablet) {
+  body {
+  }
+  .hero {
+    h1 {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .cardHolder {
+    margin-left: 8vw;
+    margin-bottom: 35vh;
+  }
+
+  .actionCard {
+    .icon {
+      text-align: center;
+      padding-top: 5.5rem;
+      font-size: 3rem;
+    }
+
+    .actionCardTitle {
+        margin-top: -1.7rem;
+    }
+
+    width: 20vw;
+    height: 30vh;
+    margin: .5rem .5rem .5rem .5rem;
+  }
+
+  .footer {
+    background: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:white;
+    text-align: center;
+    p {
+      padding-top: 1rem;
+    }
+  }
+
+}
+
+//MOBILE SCREENS
+@media (max-width: $breakpoint-tablet) {
+  body {
+  }
+
+  .hero {
+    h1 {
+      padding-top:3rem;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+  .cardHolder {
+    margin-left: 5vw;
+    margin-bottom: 3.3rem;
+  }
+
+  .actionCard {
+    .icon {
+      text-align: center;
+      padding-top: 4rem;
+      font-size: 3rem;
+    }
+
+    .actionCardTitle {
+        margin-top: -1.7rem;
+    }
+    width: 42vw;
+    height: 30vh;
+    margin: .5rem .5rem .5rem .5rem;
+  }
+
+  .footer {
+    background: black;
+    padding-top:.5rem;
+    padding-bottom: .5rem;
+    color:white;
+    text-align: center;
+    p {
+      padding-top: 1rem;
+    }
+  }
+}
